@@ -1,0 +1,14 @@
+<aside>
+  <button mat-raised-button class="direction-btn" routerLink="directions">Ir para rotas</button>
+
+  <angular-cep-material (loadedCEP)="loadedCep($event)"></angular-cep-material>
+
+  <app-address-item [address]="currentAddress"></app-address-item>
+  <h4 *ngIf="!currentAddress">Digite um cep válido</h4>
+  <button mat-raised-button class="address-btn" *ngIf="currentAddress" (click)="addAddress()">Adicionar endereço</button>
+  <app-address-list [list]="addressList"></app-address-list>
+</aside>
+
+<div class="map-container">
+  <app-map></app-map>
+</div>

@@ -1,0 +1,19 @@
+aside {
+  padding: 10px;
+  @media only screen and (min-width: 768px) {
+    float: left;
+    width: 25%;
+  }
+
+  angular-cep-material mat-form-field { width: 100%; }
+  .direction-btn { background-color: #1A8BBC; }
+  .address-btn { background-color: #1ABC4B; }
+  button { width: 100%; }
+}
+
+.map-container {
+  @media only screen and (min-width: 768px) {
+    float: right;
+    width: 70%;
+  }
+}

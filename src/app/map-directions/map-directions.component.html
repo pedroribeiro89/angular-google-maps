@@ -1,0 +1,19 @@
+<section>
+  <div>
+    <angular-cep-material label="CEP Origem" (loadedCEP)="onLoadedCep($event, true)"></angular-cep-material>
+    <app-address-item [address]="originAddress"></app-address-item>
+    <h4 *ngIf="!originAddress">Digite um cep de origem válido</h4>
+  </div>
+
+  <div>
+    <angular-cep-material label="CEP Destino" (loadedCEP)="onLoadedCep($event, false)"></angular-cep-material>
+    <app-address-item [address]="destinationAddress"></app-address-item>
+    <h4 *ngIf="!destinationAddress">Digite um cep destino válido</h4>
+  </div>
+
+</section>
+
+<div class="map-container">
+  <google-map width="100%" [options]="mapOptions"></google-map>
+<!--  <div id="map"></div>-->
+</div>
