@@ -1,27 +1,35 @@
 # CepGoogleMaps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+Project for trying google maps api with brazilian CEP
 
-## Development server
+## How to run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  1. You will need a google API key: follow the next tutorial:
+      https://developers.google.com/maps/gmp-get-started
+      
+  2. The projects have 3 Google Maps API dependecies that is required to be enabled in Google Cloud Platform.
+      The API's are: Maps Javascript API, Geocoding API, Directions API. 
+      The Getting started area on the next links explains how to do it, its the same for the Maps Javascript API
+      
+      https://developers.google.com/maps/documentation/javascript/directions
+      https://developers.google.com/maps/documentation/javascript/geocoding
+      
+  3. Replace $MAPS_KEY on the index.html with your google API Key
+  
+  4. to run: 
+  ```shell
+    npm install 
+    ng serve
+  ```
+  
+## angular-cep
 
-## Code scaffolding
+  It was also developed a lib for brazilian CEP in angular. Links:
+  https://github.com/pedroribeiro89/angular-cep
+  https://www.npmjs.com/package/@pedroribeiro89/angular-cep
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Developer
+  Pedro Ribeiro Bastos Soares
+  
+## Link
+https://admiring-elion-b654fa.netlify.app/
